@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+    background:url(./obrazky/llllllllllllllll.png) center/cover;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+}
+
+
+
+.containerfooter{
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+   
+}
+
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between; 
+    position: sticky;
+    top: 0;
+    background-color: rgba(58,18,43, 0.5);
+    color: white;
+    padding: 1rem;
+
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+}
+
+    #logo{
+        font-size: 3.3rem;
+       
+    }
+    
+.obrazek {
+    height: 70px;
+    width: 70px;
+    vertical-align: bottom;
+
+}
+
+#navbar a {
+    color:rgb(232, 108, 117); 
+    font-weight: bold; 
+    text-decoration: none;
+}
+#navbar a:hover{
+    color: rgb(193, 113, 166);
+}
+.topnav a {
+    text-decoration: none;
+    float: left;
+    display: inline;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 16px 16px 16px 16px;
+    font-size: 20px;
+    
+    
+}
+.lisst {
+    display: flex;
+    list-style: none;
+
+}
+
+#toggler, label {
+    display: none;
+    padding: 16px;
+    color:rgb(232, 108, 117);
+
+}
+#toggler, label:hover {
+border-radius: 5px;
+color:rgb(193, 113, 166);
+}
+
+/*showacse*/
+
+.showcase{
+    
+    padding-top: 15.5rem;
+    height: 600px;
+    font-size: 20px;
+    margin:auto;
+    color: rgb(123, 112, 179);
+    
+}
+
+.showcase .nadpisskalar{
+    padding-left: 60px;
+    padding-bottom: 15px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.showcase h2{
+    color:rgb(232, 108, 117);
+    font-size: 50px;
+    padding-left: 20px;
+    
+    letter-spacing: 2px;
+
+}
+.showcase .podnadpis{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.showcase .tlacitko{
+    width: 160px;
+    height: 40px;
+    background: rgb(232, 108, 117);
+   
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.showcase .tlacitko a{
+    text-decoration:none;
+    color: rgb(119, 19, 94);
+    transition: .3s ease;
+}
+
+.tlacitko:hover{
+    background-color: rgb(193, 113, 166);
+}
+
+.showcase span{
+    color: rgb(189, 75, 100);
+    font-size: 65px
+}
+
+/*tri odrazky*/
+
+#coze{
+    background: rgb(49, 24, 45);
+}
+
+#coze .items {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    margin: 0px;
+    color: rgb(193, 113, 166);
+}
+
+#coze .item {
+    text-align: center;
+    padding: 1rem;
+
+}
+
+#coze .item h4{
+    font-size: 2rem;
+    
+}
+
+#coze .items .item i {
+    background: rgb(80, 61, 176);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    
+}
+
+.text-center {
+    text-align: center;
+    
+}
+
+.m-heading{
+    font-size: 3rem;
+    color: rgb(193, 113, 166);
+}
+/*footer*/
+
+#main-footer {
+    margin: 0px;
+    background-color: rgb(49, 24, 45);
+    color: rgb(193, 113, 166);
+}
+
+/*akvaristika - obrazky jednotlivych ryb*/
+.gallery{
+    display: inline-block;
+    border: 2px solid rgb(189, 75, 100);
+    margin: 5px;
+    width: 250px;
+    margin-left: 6.4rem;
+    
+    
+    
+    
+}
+.gallery .description{
+    padding-top: 10px;
+    padding-bottom: 7px;
+    text-align: center;
+    background-color:rgb(189, 75, 100);
+
+    
+}
+
+.gallery .description2{
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #4e4d4e;
+    background-color:rgb(193, 113, 166);
+}
+.gallery:hover{
+    border: 2px solid rgb(80, 61, 176);
+}
+.gallery img{
+    width: 100%;
+    height: 220px;
+}
+
+/*info skalar*/
+.skalar{
+    display: flex;
+    padding-top: 20px;
+    margin: 5px;
+    width: 250px;
+    margin-left: 6.4rem;
+    
+}
+
+
+.skalar-content{
+    margin-left: 30px;
+    margin-top: 0px;
+    
+}
+.skalar-content h2{
+    font-size: 40px; /*nadpis upravy*/
+}
+.skalar-content p{
+    font-size: 20px; /*podnadpis upravy*/
+}
+
+.skalar img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*galerie*/
+
+
+
+h5 {
+    color: rgb(189, 75, 100);
+    font-family: Arial;
+    margin: 20px auto;
+    width: 450px;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 10px double rgb(119, 19, 94);
+}
+
+.galerie img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    border: 5px solid rgb(189, 75, 100);
+    margin-bottom: 8rem;
+    transition-duration: 1s; 
+}
+
+.galerie img:hover {
+    border: 5px solid rgb(119, 19, 94);
+    -webkit-transform: scale(1.9);
+    -ms-transform: scale(1.1);
+    transform: scale(1.05); /*jak moc se fotka přiblíží*/
+    -webkit-filter: none;
+    filter: none;
+}
+
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.stred {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*galerie rybicek, vybaveni, akvaria*/
+
+  
+  
+  .heading {
+      text-align: center;
+      font-size: 2.0em;
+      letter-spacing: 1px;
+      padding: 40px;
+      color: rgb(189, 75, 100);
+      
+  }
+  
+  .gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .popisek {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(219, 21, 21, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .popisek {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+ 
+  .opacity-low {
+    opacity: 0.5;
+  }
+/*respon*/
+
+
+
+  .zmena {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px, 220px));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.zmena img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*seznam ryb*/
+.table {
+    height:18vw;
+    width: 60%;
+    grid-area: table;
+    margin-left: 0.4rem;
+    padding-left: 50px;
+    padding-right: 30px;
+    margin-right: 70px;
+    font-size: 20px;
+    
+}
+
+.table table {
+
+    height: 100%;
+    width: 100%;
+    table-layout:auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: center;
+    border: 0.125rem solid;
+    border-collapse: collapse;
+    background-color: #3b022c;
+    
+}
+
+.container2 {
+    display: flex;
+    width: 1280px;
+    align-items: center;
+    position: relative;
+}
+.container2 img {
+    padding: 10px;
+
+    padding-top: 30px;
+}
+.desc {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+.desc h2 {
+    margin-right: 10vw;
+    margin: 0;
+    font-size: 2.5rem;
+}
+.desc h3 {
+    margin: 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.desc ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.text {
+margin-left: 10px;
+margin-right: 110px;
+border: 1px solid black;
+padding: 10px;
+height: 40vh;
+width: 1170px;
+position: relative;
+color: #ffffff;
+}
+.full {
+   background-color: rgba(65,18,45);
+    width: 1200px;
+    margin: auto;
+    color: beige;
+}
+
+.inttext{
+    color:rgb(231, 7, 156);
+    text-decoration: none;
+}
+.inttext:hover{
+    color:rgb(193, 113, 166);
+}
+
+.text a{
+    color:#102583;
+    text-decoration: none;
+}
+
+.text a:hover{
+    color:#d324d3;
+}
+
+/*emailik*/
+.kontakt{
+    margin-top: 1.5rem;
+}
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid rgb(232, 108, 117);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid rgb(119, 19, 94); }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  
+  width: 100%;
+  background:rgb(232, 108, 117);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+  margin-bottom: 6.5rem;
+}
+[type="submit"]:hover { background:rgb(119, 19, 94); }
+
+
+.videjko {
+    max-width: 700px;
+    
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 950px) {
+    .container2 img {width: 100px;}
+    .table { width: 50%; }
+    .container2 {padding-left:10px;}
+    #coze .item h4{font-size: 1rem;}
+    #coze .item{font-size: 12px;}
+    .showcase h2{font-size: 2rem;}
+    
+    } 
+
+
+
+@media screen and (max-width: 950px){
+    .topnav { width:100% ; max-height: 0; overflow: hidden;}
+    label {display: inline-flex;}
+    #toggler:checked~.topnav{max-height: 100%;}
+    .lisst{flex-direction: column; align-items:end; padding: 20px;}
+    .full{font-size: 2rem; height: 200vh; width: 600px;}
+    .desc h2{font-size: 1.5rem;}
+    .desc li{font-size: 1rem;}
+    .desc h3{font-size: 1.75rem;}
+    .text{font-size: 1rem;max-width: fit-content;}
+    
+}
